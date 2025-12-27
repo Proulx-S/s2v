@@ -1,0 +1,30 @@
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 64 concurrent workers.
+✓ NH-RS2V optimization modules loaded (direct import)
+Loading slice from slice_2d.npy...
+Loading volume from volume_3d.npy...
+Slice shape: (400, 400)
+Volume shape: (400, 400, 36)
+
+Running optimization method: nlopt_COBYLA
+Loss function: MAE
+Population size: 512
+Backend: numpy
+Slice sampling size: 400
+Starting optimization...
+Note: This may take several minutes depending on population size...
+[Parallel(n_jobs=-1)]: Done  72 tasks      | elapsed:   10.5s
+[Parallel(n_jobs=-1)]: Done 322 tasks      | elapsed:   28.9s
+[Parallel(n_jobs=-1)]: Done 512 out of 512 | elapsed:   40.8s finished
+
+Saving result to registration_result_nlopt_COBYLA_pop512_size400.json...
+  - Rotation matrix saved to registration_R.npy
+  - Translation vector saved to registration_T.npy
+✓ Registration complete! Result saved to registration_result_nlopt_COBYLA_pop512_size400.json
+
+Registration parameters:
+  Rotation matrix R (3x3):
+    [[-1.54252190e-02  8.03283235e-04  9.99880702e-01]
+ [-1.27995975e-01  9.91770815e-01 -2.77136942e-03]
+ [-9.91654725e-01 -1.28023454e-01 -1.51954650e-02]]
+  Translation vector T (3x1):
+    [   129.0602707    7176.05455254 -28394.63506452]

@@ -1,0 +1,27 @@
+{
+  "rotation_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "translation_vector": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "method": "scipy_SLSQP",
+  "loss": "MAE",
+  "population_size": 512
+}

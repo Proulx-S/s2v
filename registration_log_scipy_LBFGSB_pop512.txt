@@ -1,0 +1,30 @@
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 64 concurrent workers.
+✓ NH-RS2V optimization modules loaded (direct import)
+Loading slice from slice_2d.npy...
+Loading volume from volume_3d.npy...
+Slice shape: (400, 400)
+Volume shape: (400, 400, 36)
+
+Running optimization method: scipy_LBFGSB
+Loss function: MAE
+Population size: 512
+Backend: numpy
+Slice sampling size: 400
+Starting optimization...
+Note: This may take several minutes depending on population size...
+[Parallel(n_jobs=-1)]: Done  72 tasks      | elapsed:    1.9s
+[Parallel(n_jobs=-1)]: Done 322 tasks      | elapsed:    5.2s
+[Parallel(n_jobs=-1)]: Done 512 out of 512 | elapsed:   21.8s finished
+
+Saving result to registration_result_scipy_LBFGSB_pop512_size400.json...
+  - Rotation matrix saved to registration_R.npy
+  - Translation vector saved to registration_T.npy
+✓ Registration complete! Result saved to registration_result_scipy_LBFGSB_pop512_size400.json
+
+Registration parameters:
+  Rotation matrix R (3x3):
+    [[-7.29521669e-02  7.55123243e-05 -9.97335438e-01]
+ [-4.82474799e-01  8.75195915e-01  3.53578834e-02]
+ [ 8.72866571e-01  4.83768649e-01 -6.38110056e-02]]
+  Translation vector T (3x1):
+    [  305.14244765 18328.58886719 -7078.76434326]

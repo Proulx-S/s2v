@@ -1,0 +1,30 @@
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 64 concurrent workers.
+✓ NH-RS2V optimization modules loaded (direct import)
+Loading slice from slice_2d.npy...
+Loading volume from volume_3d.npy...
+Slice shape: (400, 400)
+Volume shape: (400, 400, 36)
+
+Running optimization method: nlopt_SBPLX
+Loss function: MAE
+Population size: 512
+Backend: numpy
+Slice sampling size: 400
+Starting optimization...
+Note: This may take several minutes depending on population size...
+[Parallel(n_jobs=-1)]: Done  72 tasks      | elapsed:    4.7s
+[Parallel(n_jobs=-1)]: Done 322 tasks      | elapsed:   13.1s
+[Parallel(n_jobs=-1)]: Done 512 out of 512 | elapsed:   18.6s finished
+
+Saving result to registration_result_nlopt_SBPLX_pop512_size400.json...
+  - Rotation matrix saved to registration_R.npy
+  - Translation vector saved to registration_T.npy
+✓ Registration complete! Result saved to registration_result_nlopt_SBPLX_pop512_size400.json
+
+Registration parameters:
+  Rotation matrix R (3x3):
+    [[ 1.47704666e-02 -3.66859168e-04 -9.99890843e-01]
+ [-6.11937073e-01  7.90851424e-01 -9.32974562e-03]
+ [ 7.90768520e-01  6.12008080e-01  1.14567498e-02]]
+  Translation vector T (3x1):
+    [  122.89933698 18314.32967003 -7028.60632966]
