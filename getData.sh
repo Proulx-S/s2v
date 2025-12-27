@@ -1,0 +1,2 @@
+cp /local/users/Proulx-S/db/vsmDrivenP1/2024-07-28--bay2--vsmDrivenP1/bids/func/sub-vsmDrivenP1_ses-1_task-50sPrd5sDur_acq-vfMRIinflow_run-1_angio.nii.gz slice.nii.gz
+cp /local/users/Proulx-S/db/vsmDrivenP1/2024-07-28--bay2--vsmDrivenP1/bids/anat/sub-vsmDrivenP1_ses-1_acq-tof_angio.nii.gz volume.nii.gz
